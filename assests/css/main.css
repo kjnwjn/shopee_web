@@ -11,21 +11,36 @@
 
 .header__navbar-list{
     padding: 0;
-    position: relative;
+    margin-top: 6px;
 }
 
 .header__navbar-item{
+    position: relative;
     list-style-type: none;
     display: inline-block;
-    padding-left: 16px;
+    margin: 0 8px;
 }
-.header__navbar-item::after{
+.header__navbar-item:hover,
+.header__navbar-link--fb:hover,
+.header__navbar-link--ins:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.header__navbar-item--unhover:hover{
+    opacity: 1;
+    cursor: auto;
+}
+
+.header__navbar-item--separate::after{
     content: "";
-    color: #fff;
+    display: block;
     position: absolute;
     height: 12px;
-    width: 2px;
-    right: 0;
+    right: -10px;
+    top: -50%;
+    border-left: 2px solid #FB9086;
+    transform: translateY(10px)
+    
 }
 
 .header__navbar-item--link{
@@ -35,4 +50,60 @@
     font-size: 1.4rem;
     color: var(--white-color);
     
+}
+.header__navbar-link{
+    text-decoration: none;
+    color: var(--white-color);
+    padding-left: 4px;
+}
+
+/* header qr code */
+.header__qr{
+    display: none;
+    width: 185px;
+    background-color: var(--white-color);
+    position: absolute;
+    border-radius: 2px;
+    animation: fadeIn ease-in 0.1s;
+    top: 125%;
+}
+.header__qr::before{
+    content: "";
+    width: 89px;
+    height: 12px;
+    background-color: transparent;
+    position: absolute;
+    top: -5px;
+}
+.header__navbar-item--qr:hover .header__qr{
+    display: block;
+}
+
+.header__qr-code{
+    width: 100%;
+    padding: 6px;
+}
+
+.header__qr--link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr--link-item{
+    
+}
+
+.header__qr--ggplay{
+    height: 17px;
+    margin-left: 17px;
+}
+
+.header__qr--appstore{
+    height: 17px;
+    margin-right: 17px;
+
+}
+.dsanjd:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }

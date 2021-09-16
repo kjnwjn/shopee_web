@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,15 +18,59 @@
         <header class="header">
             <nav class="grid header__navbar">
                 <ul class="header__navbar-list">
-                    <li class="header__navbar-item">Vào cửa hàng trên ứng dụng</li>
-                    <li class="header__navbar-item">Kết nối</li>
+                    <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate header__navbar-item--unhover">
+                        <span class="dsanjd">Tải ứng dụng</span> 
+                        <div class="header__qr ">
+                            <img src="./assests/img/qrcode.png" alt="" class="header__qr-code">
+                            <div class="header__qr--link ">
+                              <a href="" class="header__qr--link-item"> 
+                                  <img src="./assests/img/ggplay.png" class="header__qr--ggplay" alt="">
+                                </a>
+                                <a href="" class="header__qr--link-item">
+                                <img src="./assests/img/appstore.png" class="header__qr--appstore" alt="">
+                            </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--unhover">Kết nối
+                        <a href="" class="header__navbar-link header__navbar-link--fb">
+                            <i class="fab fa-facebook-square "></i>
+                        </a>
+                        <a href="" class="header__navbar-link header__navbar-link--ins">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
                     <li class="header__navbar-item"></li>
                     <li class="header__navbar-item"></li>
                 </ul>
                 <ul class="header__navbar-list">
-                    <li class="header__navbar-item"><a href="" class="header__navbar-item--link">thông báo</a></li>
-                    <li class="header__navbar-item"><a href="" class="header__navbar-item--link">Trợ giúp</a></li>
-                    <li class="header__navbar-item">Đăng kí</li>
+                    <li class="header__navbar-item"><a href="" class="header__navbar-item--link">
+                        <i class="fas fa-bell "></i>
+                        Thông báo
+                        <div class="header__notification">
+                            <header class="notify-header">
+                                <h3 class="notify__header-text">Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="notify__container">
+                                <li class="notify__item">
+
+                                </li>
+                                <li class="notify__item">
+                                    
+                                </li>
+                                <li class="notify__item">
+                                    
+                                </li>
+                            </ul>
+                            <footer class="notify__footer">
+                                <h3 class="notify__footer-text">Thông báo mới nhận</h3>
+                            </footer>
+                        </div>
+                    </a></li>
+                    <li class="header__navbar-item"><a href="" class="header__navbar-item--link">
+                        <i class="fas fa-question-circle"></i>
+                        Trợ giúp</a></li>
+                    <li class="header__navbar-item header__navbar-item--separate">Đăng kí</li>
                     <li class="header__navbar-item">Đăng nhập</li>
                 </ul>
             </nav>
