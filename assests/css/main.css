@@ -1,11 +1,12 @@
 /* navbar */
 .header{
-    height: 119px;
+    height: var(--header-height);
     background-image:linear-gradient(0,#fe6232,#f6402d) ;
 }
 .header__navbar{
     display: flex;
     justify-content: space-between;
+    height: var(--navbar-height);
 
 }
 
@@ -336,4 +337,105 @@
 }   
 .auth__form-need--help{
     color: rgb(165, 161, 161);
+}
+
+/* search */
+.header-with-search{
+    height: var(--header-search);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    padding-right: 60px;
+}
+
+.header-logo--icon{
+    width: 162px;
+    height: 50px;
+    
+}
+.header__searchbar{
+    width: 100%;
+    height: 40px;
+    background-color: var(--white-color);
+    display: flex;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+.header__searchbar-area{
+    width: 100%;
+}   
+.header__search{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    border-radius: 2px;
+}
+
+.header__searchbar-select{
+    display: flex;
+    cursor: pointer;
+}
+.ovdow{
+    font-size: 1.3rem;
+    width: 80px;
+    margin: auto;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+}
+.ovdow::before{
+    content: "";
+    height: 26px;
+    width: 2px;
+    background-color: #d6d0d0;
+    position: absolute;
+    left: -6px;
+    top: -4px;
+}
+
+
+
+.header__searchbar-select--icon{
+    margin: auto;
+    text-align: center;
+    padding-right: 6px;
+}
+.select__search-icon{
+    width: 63px;
+    font-size: 15px;
+    /* margin: auto; */
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 2px 2px 2px 0;
+
+}
+.header__cart{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    
+}
+
+.header__cart-icon{
+    margin: auto;
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+.header__searchbar-descrip{
+    display: flex;
+    margin: 0;
+}
+.snadu{
+    width: 100%;
 }

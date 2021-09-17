@@ -5,6 +5,9 @@
     --text-color  : #333;
     --primary-color: #EE4D2D;
     --border-color: #dbdbdb;
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-search: calc(var(--header-height) - var(--navbar-height))
 }
 *{
     box-sizing: inherit;
