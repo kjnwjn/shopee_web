@@ -115,7 +115,8 @@
 
         </div>
         <div class="modal__body">
-            <div class="auth__form-container">
+            <!-- Register form -->
+            <!-- <div class="auth__form-container">
                 <div class="auth-form__header">
                     <h3 class="auth__form-heading">Đăng ký</h3>
                     <span class="auth__form-switch--btn">Đăng nhập</span>
@@ -136,18 +137,41 @@
                     <a href="" class="policy__text">Chính sách bảo mật</a>
                 </div>
                 <div class="auth__form-controls">
-                    <button class="btn">Trở Lại</button>
-                    <button class="btn btn--primary">Đăng ký</button>
+                    <button class="btn btn-normal  auth__form-controls--back">Trở Lại</button>
+                    <button class="btn btn--primary auth__form-controls--register">Đăng ký</button>
+                </div>
+            </div> -->
+            
+            <!-- login form -->
+             <div class="auth__form-container">
+                <div class="auth-form__header">
+                    <h3 class="auth__form-heading">Đăng Nhập</h3>
+                    <span class="auth__form-switch--btn">Đăng Ký</span>
+                </div>
+                <div class="auth__form-form">
+                    <input type="email" class="auth__form-form--input" placeholder="Nhập Email">
+                </div>
+                <div class="auth__form-form">
+                    <input type="password" class="auth__form-form--input" placeholder="Nhập mật khẩu">
+                </div>
+               
+                <div class="auth__form-policy-text ssmci">
+               <a href="" class="auth__form-forgot--password">Quên mật khẩu</a>
+               <a href="" class="auth__form-need--help">Cần trợ giúp ?</a>
+            </div>
+                <div class="auth__form-controls">
+                    <button class="btn btn-normal  auth__form-controls--back">Trở Lại</button>
+                    <button class="btn btn--primary auth__form-controls--register">Đăng Nhập</button>
                 </div>
             </div>
            
             
             <div class="auth__form-footer">
-                <a href="" class="btn btn--withicon">
-                    <i class="fab fa-facebook-square"></i>
+                <a href="" class="btn btn--withicon btn--withicon-faceook">
+                    <i class="fab fa-facebook-square "></i>
                     Facebook
                 </a>
-                <a href="" class="btn btn--withicon">
+                <a href="" class="btn btn--withicon btn--withicon--google">
                     <i class="fab fa-google"></i>
                     Google
                 </a>

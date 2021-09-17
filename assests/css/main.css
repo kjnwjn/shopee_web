@@ -226,6 +226,9 @@
     padding: 0 32px;
     width: 400px;
     margin: 0;
+    padding-bottom: 20px;
+    background-color: var(--white-color);
+    border-radius: 2px;
 }
 
 .auth-form__header{
@@ -233,6 +236,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
+    padding: 0 12px;
 }
 
 .auth__form-heading{
@@ -272,4 +276,64 @@
 .policy__text{
     text-decoration: none;
     color: var(--primary-color);
+}
+.auth__form-controls{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth__form-controls--back{
+    margin-right: 8px;
+}
+
+.auth__form-footer{
+    background-color: #e2e1e2;
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+}
+.btn--withicon{
+    font-size: 12px;
+    line-height: 26px;
+    min-width: 153px;
+}
+.btn--withicon-faceook{
+    background-color: #304983;
+    color: var(--white-color);
+    
+}
+.btn--withicon--google{
+    background-color: #ebebeb;
+
+}
+
+.auth__form-policy-text.ssmci{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    
+}
+.auth__form-forgot--password{
+    color: var(--primary-color);
+    margin-right: 20px;
+    position: relative;
+}
+.auth__form-forgot--password::after{
+    content: "";
+    height: 12px;
+    width: 1px;
+    background-color: rgb(165, 161, 161);
+    position: absolute;
+    top: 2px;
+    right: -10px;
+}
+.auth__form-forgot--password,
+.auth__form-need--help{
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}   
+.auth__form-need--help{
+    color: rgb(165, 161, 161);
 }
