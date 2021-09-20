@@ -364,7 +364,8 @@
     margin-top: 8px;
 }
 .header__searchbar-area{
-    width: 100%;
+    position: relative;
+    flex: 1;
 }   
 .header__search{
     height: 100%;
@@ -380,6 +381,7 @@
 .header__searchbar-select{
     display: flex;
     cursor: pointer;
+    position: relative;
 }
 .ovdow{
     font-size: 1.3rem;
@@ -412,7 +414,7 @@
     /* margin: auto; */
     text-align: center;
     color: var(--white-color);
-    background-color: var(--primary-color);
+    background-color: #f36447;
     outline: none;
     border: none;
     cursor: pointer;
@@ -438,4 +440,110 @@
 }
 .snadu{
     width: 100%;
+}
+
+.header__searchbar-descrip{
+    padding: 0;
+}
+
+.header__searchbar-descrip--link{
+    text-decoration: none;
+    color: hsla(0,0%,100%,.9);
+    
+    
+}
+
+.header__searchbar-item{
+    margin:4px 12px 0 0;
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+.select__search-icon:hover{
+    background-color: #fb6445;
+}
+.header__searchbar-select:hover .header__search-option{
+    display: block;
+}
+.header__search-option{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding-left: 0;
+    list-style: none;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #e0e0e0;
+    width: 112px;
+    display: none;
+    
+    
+}
+.header__search-option::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: -12px;
+    right: 0;
+    width: 114px;
+    height: 12px;
+
+}
+
+.header__search-option--item{
+    font-size: 1.4rem;
+    padding: 8px 8px;
+}
+.header__search-option--item:hover{
+    background-color: #f7f4f4;
+    border-radius: 3px;
+
+}
+
+.header__search-option--icon{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-left: 5px;
+    
+}
+.header__searchbar-history{
+    position: absolute;
+    background-color: var(--white-color);
+    top: calc(100% + 3px);
+    left: 0;
+    width: calc(100% - 16px);
+    border-radius: 2px;
+    box-shadow: 0 1px 5px #999;
+    display: none;
+}
+
+.history__heading{
+    padding-left: 12px;
+    font-size: 1.3rem;
+    color: #999;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+.history__list{
+    padding: 0;
+    margin: 0;
+}
+
+.history__item{
+    list-style: none;
+    padding: 8px 0 8px 12px;
+    
+}
+.history__item:hover{
+    background-color: #f0f0f0;
+}
+.history__item a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.header__search:focus ~ .header__searchbar-history{
+    display: inline-block;
 }
