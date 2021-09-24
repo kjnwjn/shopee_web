@@ -59,6 +59,16 @@ html{
         transform: scale(var(--growth-to));
     }
 }
+@keyframes growthout{
+    from{
+        opacity: 1;
+        transform: scale(var(--growth-to));
+    }
+    to{
+        opacity: 0;
+        transform: scale(var(--growth-from));
+    }
+}
 /* authen modal */
 .modal{
     position: fixed;
