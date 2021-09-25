@@ -29,7 +29,6 @@ html{
     width: 100%;
 }
 .grid__row{
-    
     display: flex;
     flex-wrap: wrap;
     margin-left: -12px;
