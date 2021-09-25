@@ -29,7 +29,7 @@ html{
     width: 100%;
 }
 .grid__row{
-    /* width: 100%; */
+    
     display: flex;
     flex-wrap: wrap;
     margin-left: -12px;
@@ -119,14 +119,19 @@ html{
     outline: none;
     border: none;
     font-weight: 450;
-    color: var(--text-color);
     cursor: pointer;
     border-radius: 2px;
     text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 0;
-    line-height: 30px
+    line-height: 30px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    
+}
+.btn-normal{
+
 }
 .btn.btn-normal:hover{
     background-color: #c3c3c3;
@@ -134,68 +139,4 @@ html{
 .btn.btn--primary{
     background-color: var(--primary-color);
     color: var(--white-color);
-}
-
-/*APP CONTAiNER */
-.app__container{
-    background-color: #f5f5f5;
-}
-.category{
-    background-color: var(--white-color);
-    border-radius: 2px ;
-    
-}
-
-.category-heading{
-    margin-top: 16px ;
-    margin-bottom: 0;
-    padding: 14px 16px;
-    font-size: 1.8rem;
-    color: var(--text-color);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-}
-.category-heading__icon{
-    /* color: (--text-color); */
-    margin-right: 6px;
-    font-size: 1.4rem;
-    position: relative;
-    top: -1px;
-}
-.category-list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.category-item{
-}
-
-.category-item__link{
-    position: relative;
-    /* padding: 12px 16px; */
-    padding: 12px 0 12px 40px;
-    font-size: 1.4rem;
-    color: var(--text-color);
-    text-decoration: none;
-    display: block;
-    transition: right linear 0.1s;
-    right: 0;
-}
-
-.category-item__link:hover {
-    color: var(--primary-color);
-    right: -4px;
-}
-.category-item__active .category-item__link{
-    color: var(--primary-color);
-
-}
-.category-item__active .category-item__link::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 23px;
-    border: 6px solid;
-    border-color: transparent transparent transparent var(--primary-color);
-    transform: translateY(-51%);
 }
