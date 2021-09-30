@@ -1204,3 +1204,59 @@
 .home-product__pagination{
     margin: 56px 0 32px;
 }
+
+
+/* footer */
+.footer{
+    padding-top: 20px;
+    border-top: 5px solid var(--primary-color);
+}
+.footer-heading{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.footer-list{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item__link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #727272;
+    padding: 8px 0;
+}
+.footer-list i{
+    color: #4a4a4a;
+    padding-right: 7px;
+}
+.footer-contact{
+    display: flex;
+
+}
+.footer-contact-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -1px;
+}
+.footer-contact_img{
+    width: 88px;
+}
+.footer-contact_app{
+    height: 20px;
+
+}
+.footer__bottom{
+    margin-top: 20px;
+    padding: 12px 0;
+    background-color: rgb(243, 243, 243);
+}
+.footer__about-us{
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
