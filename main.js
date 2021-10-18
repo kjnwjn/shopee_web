@@ -14,6 +14,9 @@ function getRequestBodyFromValues(formValues) {
     }
     
 }
+function getComment (){
+    console.log('123')
+}
 
 
 // getRequestBodyFromValues(formValues)
