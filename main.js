@@ -3,3 +3,5 @@ console.log(SearchbarHistory)
 SearchbarHistory.onmousedown = function(e){
     e.preventDefault();
 }
+
+console.log(123)
